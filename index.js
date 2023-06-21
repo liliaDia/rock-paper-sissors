@@ -7,7 +7,8 @@ const game = () => {
   let playerWon = 0;
   let computerWon = 0;
 
-  const message = `lets play rock paper sissors! Best of 5 rounds, Please type rock paper sissors round: `;
+  const message =
+    "lets play rock paper sissors! Best of 5 rounds, Please type rock paper sissors round: ";
 
   const playerchoice = () => {
     let choice = prompt(message + rounds);
@@ -23,7 +24,7 @@ const game = () => {
 
   const consgetComputerChoice = () => {
     let num = Math.floor(Math.random() * 3);
-    console.log(choices[num]);
+    console.log("computer chooses ", choices[num]);
     return choices[num];
   };
 
